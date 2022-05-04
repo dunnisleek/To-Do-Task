@@ -29,7 +29,8 @@ for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
   //var txt = document.createTextNode("\u00D7");
   var txt = document.createTextNode("delete");
-  span.className = "close";
+  span.className = "close"  
+  
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
 }
@@ -41,8 +42,12 @@ for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement;
     div.style.display = "none";
+    alert('Are you sure you want to Delete?')
   }
 }
+
+ 
+
 
 // Create a new list item when clicking on the "Add" button
 function newElement() {
@@ -60,7 +65,8 @@ function newElement() {
  
 
   var span = document.createElement("SPAN");
-  var txt = document.createTextNode("Delete");
+  var txt = document.createTextNode("delete");
+  
  
   span.className = "close";
   span.appendChild(txt);
@@ -70,6 +76,7 @@ function newElement() {
     close[i].onclick = function() {
       var div = this.parentElement;
       div.style.display = "none";
+      alert('Are you sure you want to Delete?')
     }
   }
 }

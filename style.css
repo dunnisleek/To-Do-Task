@@ -18,6 +18,9 @@
     border-radius: 15px;
 
 }
+.tab{
+    position: fixed;
+}
 #defaultOpen{
     padding-left: 35px;
 }
@@ -159,13 +162,18 @@
     font-family: 'Oswald', sans-serif;
 }
 .user{
-    margin-top: 460px;
+ 
+   position:absolute;
+   left:0;
+   right: 0;
+    bottom: 0;
     padding: 15px;
     padding-left: 35px;
     font-family:'Oswald', sans-serif ;
     font-size: 18px;
     font-weight: bold;
     border-top:2px solid #B60000 ;
+   
 }
 
 
@@ -323,7 +331,9 @@ border-bottom: 2px solid #B60000;
 }
 
 #head3{
-  margin-left: 100px;
+  width: 1000px;
+  margin: 0;
+  text-align: left;
   color:black;
   font-size: 40px;
   font-style: 500;
@@ -331,14 +341,36 @@ border-bottom: 2px solid #B60000;
 
 }
 .item-wrapper{
-   width:60%;
+  
+  position:absolute;
+  padding-bottom: 30px;
+    width:61%;
+    padding-top: 40px;
+   text-align: center;
+   left:9%;
+   transform: translate(15%, 0%);
+   /*width:60%;
+   margin:auto;
    height: 100%;
-  margin-left: 350px;
+   position: relative;
+   max-width: 700px;
+   margin: 0 auto;
+ 
+   position: absolute;
+left: 50%;
+width:55%;
+transform: translate(-40%, 0%);
+
+padding: 10px;*/
+ 
     
 
     
 }
-
+#new-task h3 {
+    text-align: left;
+  
+}
 
 .item-wrapper ul li{
     margin-top: 30px;
@@ -365,9 +397,17 @@ border-bottom: 2px solid #B60000;
     cursor: pointer;
 }
 
+#new-task{
+    position:absolute;
+    width:100%;
+    padding-top: 40px;
+   text-align: center;
+   left:9%;
+}
+
 
     /* start of index.html*/
- /* For mobile phones: */
+ /* For mobile phones: 
 @media only screen and (max-width: 768px) {
   
     .tab {
