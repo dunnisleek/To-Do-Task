@@ -1,5 +1,6 @@
 *{
     margin:  0 auto;
+    
     font-family: 'Barlow Semi Condensed', sans-serif;
 
 }
@@ -20,6 +21,7 @@
 }
 .tab{
     position: fixed;
+   
 }
 #defaultOpen{
     padding-left: 35px;
@@ -142,8 +144,14 @@
     border-radius:3px;
 }
 /*Tab*/
+.tabheader {
+    width: 15vh;
+    height: 5vh;
+    padding:13px;
+    padding-left: 3vh;
+}
 
-
+/*
 .tabheader{
     color: #756B6B;
     font-family: 'Oswald', sans-serif;
@@ -157,6 +165,7 @@
     border-bottom: 2px solid #B60000;
 
 }
+*/
 .tabheader span{
     color:red;
     font-family: 'Oswald', sans-serif;
@@ -206,8 +215,8 @@
  #new-task h3{
      color:#282828;
      text-align: left;
-     width: 60%;
-     padding: 1rem 14.5rem;
+     width: 85vh;
+     
  }
  
 
@@ -229,7 +238,7 @@
     float: left;
     width: 20%;
    height: 100vh;
-    border: 1px solid #ccc;
+    
     font-size: 40px;
   font-style: 500;
     background-color:#FFCFCF;
@@ -277,9 +286,9 @@ border-bottom: 2px solid #B60000;
 
 /*Frame4*/
 .input-frame{
-    width:60%;
+    width:91vh;
     height: 70px;
-
+    margin-left: 50px;
     border:none;
     text-align: left;
     margin-bottom: 25px;
@@ -300,8 +309,9 @@ border-bottom: 2px solid #B60000;
 /*button*/
 
 .frame4-btn{
-    width:60%;
+    width:91vh;
     height:45px;
+    margin-left: 50px;
     background-color: #B60000;
     color:#fff;
     outline:none;
@@ -314,7 +324,8 @@ border-bottom: 2px solid #B60000;
 }
 
 .frame4-btn:hover{
-    width:60%;
+    width:91vh;
+    margin-left: 50px;
     background:#ca0202;
     color:#fff;
     height:45px;
@@ -323,16 +334,16 @@ border-bottom: 2px solid #B60000;
     animation: anim 3s;
 
 }
-
+/*
 .item-wrapper{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
+}*/
 ul{
-  width:60%;
- 
-  padding: 1rem 14.5rem;
+  width:90vh;
+   display: block;
+  
 }
 
     
@@ -365,15 +376,20 @@ ul{
     margin-left: 140px;
     cursor: pointer;
 }
-
+/*
 #new-task{
-  /*  position:absolute;*/
+  /*  position:absolute;
     display:flex;
     width:80%;
     padding-top: 40px;
    text-align: center;
-   /*left:9%; */
+  
 }
+*/
 
-
+@media only screen and (max-device-width: 960px) {
+  .tabheader{  
+    width: 250px;
+height: 47px;}
+}
    
