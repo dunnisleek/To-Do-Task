@@ -386,6 +386,10 @@ ul{
   
 }
 */
+.border{
+    border-bottom: 2px solid #B60000;
+}
+
 
 @media only screen and (max-device-width: 960px) {
   .tabheader{  
